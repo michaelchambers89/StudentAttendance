@@ -10,14 +10,13 @@ pipeline
         }
         stage('Build') {
             steps {
-		Users\user\IdeaProjects\studentAttendance\src\javac Student.java
-		
+		bat 'mvn clean -f "Users\\user\\ IdeaProjects\\ studentAttendance\\ src\\ studentTest.java"'
             }
         }
         stage('Test') {
             steps {
-		Users\user\IdeaProjects\studentAttendance\tests\javac studentTest.java
-		
+		cd ..\user\IdeaProjects\studentAttendance\src
+		javac studentTest.java
             }
         }
     }
