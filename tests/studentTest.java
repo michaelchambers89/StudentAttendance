@@ -2,7 +2,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class StudentTest {
+public class studentTest {
     @Test(expected = IllegalArgumentException.class)
     public void belowZero() throws Exception {
         Student std = new Student();
