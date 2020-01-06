@@ -11,13 +11,13 @@ pipeline
         stage('Build') {
             steps {
 		cd ..\user\IdeaProjects\studentAttendance\src
-		bat 'javac studentTest.java'
+		bash 'javac studentTest.java'
             }
         }
         stage('Test') {
             steps {
 		cd ..\user\IdeaProjects\studentAttendance\src
-		bat 'javac studentTest.java'
+		bash 'javac studentTest.java'
             }
         }
     }
