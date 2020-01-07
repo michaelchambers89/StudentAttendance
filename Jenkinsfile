@@ -10,7 +10,7 @@ pipeline
         }
         stage('Build') {
             steps {
-		sh 'javac Student.java studentTest.java'
+		sh label: '', script: 'javac -cp  junit-4.13.jar:. Student.java studentTest.java'
             }
         }
         stage('Test') {
