@@ -10,7 +10,7 @@ pipeline
         }
         stage('Build') {
             steps {
-		sh 'javac Student.java'
+		sh 'javac Student.java studentTest.java'
             }
         }
         stage('Test') {
