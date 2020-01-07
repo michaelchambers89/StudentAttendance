@@ -10,14 +10,14 @@ pipeline
         }
         stage('Build') {
             steps {
-		"cd ..\\user\\IdeaProjects\\studentAttendance\\src"
-		bash 'javac studentTest.java'
+		cd ..\user\IdeaProjects\studentAttendance\src
+		sh 'javac studentTest.java'
             }
         }
         stage('Test') {
             steps {
-		cd ..\\user\\IdeaProjects\\studentAttendance\\src
-		bash 'javac studentTest.java'
+		cd ..\user\IdeaProjects\studentAttendance\src
+		sh 'javac studentTest.java'
             }
         }
     }
