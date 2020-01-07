@@ -16,7 +16,7 @@ pipeline
         stage('Test') {
             steps {
 		sh '''
-                java -cp junit-4.12.jar;hamcrest-core-1.3.jar;. org.junit.runner.JUnitCore studentTest
+                java -cp junit-4.13.jar;hamcrest-core-1.3.jar;. org.junit.runner.JUnitCore studentTest
                 '''
             }
         }
